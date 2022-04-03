@@ -1,4 +1,4 @@
 getgenv().whitelisted = {
-        ["sdasdadsadasdadsadsa"] = "231231231231231"
+        ["sdasdadsadasdadsadsa"] = "231231231231231",
         ["0862F8A5-F6A4-406E-9191-171E932206F4"] = "117.102.53.54"
 }
