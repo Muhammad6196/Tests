@@ -1,4 +1,4 @@
 if not game:IsLoaded() then 
     game.Loaded:Wait()
 end
-print("Hello World")
+print("Hello World 123")
