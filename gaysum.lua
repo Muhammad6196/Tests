@@ -20,15 +20,18 @@
     end)
 
 local updateinv = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs.Inventory)
-    local pica = hookfunction(updateinv.isVisible, function()
+    local function inret()
         return true
-    end)
+    end
+    
+    updateinv.isVisible = inret
     updateinv.Update()
 
-local cmod = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.Game.Lootbags)
-    local shush = hookfunction(cmod.ScanForCollection, function(...)
-        for i,v in pairs(game:GetService("Workspace")["__THINGS"].Lootbags:GetChildren()) do
-            v:SetAttribute("Collected")
-            cmod.Collect(v)
-        end
-    end)
+local cmod = getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.Game.Lootbags)  
+local function lootsike()
+     for i,v in pairs(game:GetService("Workspace")["__THINGS"].Lootbags:GetChildren()) do
+        v:SetAttribute("Collected")
+        cmod.Collect(v)
+    end
+end
+cmod.ScanForCollection = lootsike
