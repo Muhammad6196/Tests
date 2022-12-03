@@ -1,4 +1,4 @@
-    local network = require(game:GetService("ReplicatedStorage").Framework.Client["2 | Network"])
+    local network = require(game:GetService("ReplicatedStorage").Framework.Client["1 | Network"])
 
     e = getupvalues(network.Invoke)[2]
     f = getupvalues(network.Invoke)[3]
