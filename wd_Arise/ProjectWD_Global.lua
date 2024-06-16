@@ -14,10 +14,7 @@ Global.dev = "W41K3R"
 Global.HUB = "Project WD"
 Global.WD = {}
 Global.allplayers = {}
-Global.ffs = FindFirstChild
-Global.wfc = WaitForChild
 Global.pr = print
-Global.ffoc = FindFirstChildOfClass
 Global.rq = require
 Global.gs = getsenv
 
