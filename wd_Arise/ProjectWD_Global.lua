@@ -3,9 +3,9 @@ if not game.Loaded then
 end
 
 local Global = getgenv() and getgenv()
-Global.player = Players.LocalPlayer
 Global.players = game.Players
-Global.idled = Player.Idled
+Global.player = players.LocalPlayer
+Global.idled = player.Idled
 Global.wait = task.wait
 Global.spawn = task.spawn
 Global.gameid = game.GameId
@@ -32,11 +32,11 @@ WD.GetChar = function()
 end
 
 WD.GetRoot = function()
-    return Player.Character.PrimaryPart
+    return player.Character.PrimaryPart
 end
 
 WD.GetChar = function()
-    return player and Player.Character
+    return player and player.Character
 end
 
 WD.Mag = function(pos1, pos2)
