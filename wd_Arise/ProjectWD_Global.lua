@@ -43,6 +43,9 @@ WD.Mag = function(pos1, pos2)
     return (pos1-pos2).magnitude
 end
 
+WD.FFA = function(parent, Instance)
+    return parent:FindFirstChild(Instance, true)
+end
 WD.GetNearestPlayer = function()
     local target = nil
     local distance = math.huge
