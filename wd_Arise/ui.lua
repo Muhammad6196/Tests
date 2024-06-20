@@ -1279,7 +1279,7 @@ if IKAI then
                 end)
             end
             
-            function main:Textbox(text, disappear, callback)
+            function main:Textbox(text, text2, disappear, callback)
                 local Textbox = Instance.new("Frame")
                 local TextboxCorner = Instance.new("UICorner")
                 local Textboxx = Instance.new("Frame")
@@ -1352,7 +1352,7 @@ if IKAI then
                 RealTextbox.Position = UDim2.new(0, 281, 0, 5)
                 RealTextbox.Size = UDim2.new(0, 150, 0, 20)
                 RealTextbox.Font = Enum.Font.GothamSemibold
-                RealTextbox.Text = ""
+                RealTextbox.Text = text2
                 RealTextbox.TextColor3 = Color3.fromRGB(225, 225, 225)
                 RealTextbox.TextSize = 11.000
                 RealTextbox.TextTransparency = 0
