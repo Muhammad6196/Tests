@@ -990,7 +990,8 @@ if IKAI then
                 function dropfunc:Clear()
                     DropTitle.Text = tostring(text) .. " : "
                     isdropping = false
-                    Dropdown:TweenSize(UDim2.new(0, 470, 0, 31), "Out", "Quad", 0.3, true)
+                    Dropdown:TweenSize(UDim2.new(0, 436, 0, 29), "Out", "Quad", 0.3, true)
+                    dropmain:TweenSize(UDim2.new(0, 442, 0, 31), "Out", "Quad", 0.3, true)
                     TweenService:Create(
                         DropImage,
                         TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
