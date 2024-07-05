@@ -1,5 +1,4 @@
-
-_G.Color = Color3.fromRGB(235, 52, 70)
+_G.Color = Color3.fromRGB(48, 95, 255)
 IKAI = true
 if IKAI then
     do
@@ -398,7 +397,7 @@ if IKAI then
         PLL.Name = "PLL"
         PLL.Parent = ScrollTab
         PLL.SortOrder = Enum.SortOrder.LayoutOrder
-        PLL.Padding = UDim.new(0, 15)
+        PLL.Padding = UDim.new(0, 1)
         PLL.HorizontalAlignment = "Center"
         local PPD = Instance.new("UIPadding")
         PPD.Name = "PPD"
@@ -460,14 +459,14 @@ if IKAI then
             TabButton.TextSize = 15.000
             TabButton.TextTransparency = 0.500
             
-            local IDK = Instance.new("ImageLabel")
-            IDK.Name = "LogoIDK"
-            IDK.Parent = TabButton
-            IDK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            IDK.BackgroundTransparency = 1.000
-            IDK.Position = UDim2.new(0, 15 - #text, 0, 1)
-            IDK.Size = UDim2.new(0, 20, 0, 20)
-            IDK.Image = "rbxassetid://" .. tostring(logo1)
+            -- local IDK = Instance.new("ImageLabel")
+            -- IDK.Name = "LogoIDK"
+            -- IDK.Parent = TabButton
+            -- IDK.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+            -- IDK.BackgroundTransparency = 1.000
+            -- IDK.Position = UDim2.new(0, 15 - #text, 0, 1)
+            -- IDK.Size = UDim2.new(0, 20, 0, 20)
+            -- IDK.Image = "rbxassetid://" .. tostring(logo1)
             
             
             local MainFramePage = Instance.new("ScrollingFrame")
@@ -643,7 +642,7 @@ if IKAI then
                 
                 Toggle.Name = "Toggle"
                 Toggle.Parent = MainFramePage
-                Toggle.BackgroundColor3 = Color3.fromRGB(255, 46, 46)
+                Toggle.BackgroundColor3 = _G.Color
                 Toggle.Size = UDim2.new(0, 442, 0, 31)
                 
                 UICorner.CornerRadius = UDim.new(0, 5)
@@ -685,7 +684,7 @@ if IKAI then
                 
                 Circle.Name = "Circle"
                 Circle.Parent = ToggleImage
-                Circle.BackgroundColor3 = Color3.fromRGB(255, 46, 46)
+                Circle.BackgroundColor3 = _G.Color
                 Circle.Position = UDim2.new(0, 2, 0, 2)
                 Circle.Size = UDim2.new(0, 16, 0, 16)
                 
@@ -720,12 +719,12 @@ if IKAI then
                         TweenService:Create(
                             Toggle,
                             TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                            {BackgroundColor3 = Color3.fromRGB(255, 46, 46)}
+                            {BackgroundColor3 = _G.Color}
                         ):Play()
                         TweenService:Create(
                             Circle,
                             TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                            {BackgroundColor3 = Color3.fromRGB(255, 46, 46)}
+                            {BackgroundColor3 = _G.Color}
                         ):Play()
                     end
                     pcall(callback, toggled)
@@ -762,7 +761,7 @@ if IKAI then
                 
                 dropmain.Name = text
                 dropmain.Parent = MainFramePage
-                dropmain.BackgroundColor3 = Color3.fromRGB(255, 46, 46)
+                dropmain.BackgroundColor3 = _G.Color
                 dropmain.Size = UDim2.new(0, 442, 0, 31)
                 
                 UICornerdrop.CornerRadius = UDim.new(0, 5)
@@ -1524,4 +1523,5 @@ if IKAI then
         return uitab
     end
 end
+
 return library1
