@@ -365,6 +365,15 @@ if IKAI then
                     game:GetService("CoreGui"):FindFirstChild("ProjectWD").Enabled = true
                 end
             end
+            if input.KeyCode == Enum.KeyCode.RightControl then
+                if toggled == false then
+                    toggled = true
+                    game:GetService("CoreGui"):FindFirstChild("ProjectWD").Enabled = false
+                else
+                    toggled = false
+                    game:GetService("CoreGui"):FindFirstChild("ProjectWD").Enabled = true
+                end
+            end
         end)
         
         
