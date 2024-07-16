@@ -1377,7 +1377,7 @@ if IKAI then
                 RealTextbox.FocusLost:Connect(function()
                     callback(RealTextbox.Text)
                     if string.len(RealTextbox.Text) > 20 then
-                        RealTextbox.Text = string.sub(text, 1, 20) .. "..." -- Truncate and add ellipsis
+                        RealTextbox.Text = string.sub(RealTextbox.Text, 1, 20) .. "..." -- Truncate and add ellipsis
                     end
                     if disappear then
                         RealTextbox.Text = ""
