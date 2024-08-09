@@ -67,7 +67,11 @@ end
 
 WD.DisableConnection = function(Signal)
     if not getconnections then
-        print("Get Better Exploit XD")
+        game.Players.LocalPlayer.Idled:Connect(function()
+            game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+            task.wait(1)
+            game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        end)
     else
         for i,v in next, getconnections(Signal) do
             v:Disable()
