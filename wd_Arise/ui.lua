@@ -2,7 +2,7 @@ _G.Color = Color3.fromRGB(48, 95, 255)
 IKAI = true
 if IKAI then
     do
-        local ui = game.CoreGui:FindFirstChild("ProjectWD")
+        local ui = game:GetService("CoreGui"):FindFirstChild("ProjectWD")
         if ui then
             ui:Destroy()
         end
